@@ -1,0 +1,169 @@
+body
+{
+    background-color:rgb(255, 252, 225);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    margin:0;
+}
+
+p
+{
+    font-weight: 500;
+}
+
+header
+{
+    background-color:brown;
+    align-items: center;
+    padding: 12px;
+    top:0;
+    position: sticky;
+    display: flex;
+}
+
+.logo h1
+{
+    color: white;
+    font-size: 27px;
+    font-weight: 200;
+    padding-left: 50px;
+}
+
+.logo h1 span
+{
+    font-weight: 700;
+}
+
+label
+{
+    display: list-item;
+    padding-top: 2px;
+}
+
+.modal 
+{
+    display: none; 
+    position: fixed; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow-y: initial;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.continut-modal 
+{
+    background-color:rgb(255, 248, 238);
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow-y: auto;
+    animation-name: animatie;
+    animation-duration: 1s;
+}
+
+@keyframes animatie 
+{
+    from {opacity:0}
+    to {opacity:1}
+}
+
+#buton_viz, #buton_viz2
+{
+    text-align: center;
+}
+
+input
+{
+    background-color:oldlace;
+}
+
+#detalii, #produse, #creat, #stopprop1, #stopprop2
+{
+    text-align: center;
+    font-size: large; 
+}
+
+button
+{
+    border-radius: 7px;
+}
+
+h2, h3
+{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.detalii2
+{
+    padding-top: 10px;
+}
+
+#iconp
+{
+  padding-left: 27px;
+  font-weight: 600;
+}
+
+.fas
+{
+   padding-bottom: 10px;
+}
+
+.icon
+{
+    color:white;
+}
+
+.classList
+{
+    color: brown;
+    font-style: italic;
+}
+
+#ceas
+{
+  font-size: x-large;
+  padding-left: 750px;
+  font-weight: 600;
+  color: white;
+  float: left;
+  letter-spacing: 1px;
+}
+
+footer
+{
+    color:maroon;
+    background-color:rgb(252, 205, 125);
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    font-weight: 500;
+    font-family:cursive;
+}
+
+.cantitate
+{
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgb(253, 251, 242);
+}
+
+#transport
+{
+    font-weight: 700;
+}
+
+#put, #delete
+{
+   margin-left:480px;
+   background-color:rgb(218, 108, 68);
+   color:white; 
+}

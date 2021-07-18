@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body{
+    background-color:rgb(255, 252, 225);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    background-color:brown;
+    align-items: center;
+    padding: 10px 100px;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+
+.logo h1{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+   
+}
+
+.logo h1 span{
+    font-weight: 700;
+}
+
+nav{
+    margin:10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    float: left;
+    padding: 0px 10px;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+nav ul li{
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav ul ul{
+    position: absolute;
+    top:60px;
+    visibility: hidden;
+    background-color:maroon;
+    border-radius: 10px;
+}
+
+nav ul ul li{
+    margin: 0;
+    text-align: center;
+    display: list-item;
+}
+
+nav ul ul li a{
+    font-size: smaller;
+}
+
+nav ul li a:hover{
+    border-radius: 5px;
+    box-shadow:10px 10px 30px maroon;
+}
+
+nav ul li:hover > ul{
+    visibility: visible;
+}
+
+nav ul ul li a:hover{
+    border-radius: 10px;
+    background-color:orangered;
+}
+
+.bun_venit{
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    margin-top: 40px;
+    font-weight: 800;
+    font-size: x-large;
+    color:darkred;
+    animation-name: bun;
+    animation-delay: 1.5s;
+    animation-duration: 3.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@keyframes bun{
+    0% {font-size:x-small;opacity:0.1}
+    100% {opacity: 1}
+}
+
+.traditie, .excelenta {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    padding: 50px;
+    float: left;
+}
+
+.Avertisment, .Acasa, .Comanda,.Galerie, .Contact, .Login{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+
+.Comanda{
+    padding-left:25px;
+    padding-right: 25px;
+}
+
+.gol{
+   float:left;
+   width:100%;
+   padding-bottom:30px;
+   visibility: hidden;
+}
+
+.gol2{
+    float:left;
+    width:100%;
+    padding-bottom:15px;
+    visibility: hidden;
+}
+
+.img1{
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+   
+}
+
+.filozofia{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    float: left;
+    padding: 50px;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.img2{
+    width:100%;
+    padding: 50px;
+    
+}
+
+.Meniu{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    float:left;
+    padding: 30px;
+    list-style-type:square;
+    font-style: italic;
+    font-size: large;
+}
+
+.Mic, .Pranz, .Cina, .Desert{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    float:left;
+    padding: 32px;
+    font-size: small;
+}
+
+.Bauturi{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top:28px;
+    float:left;
+    font-size: medium;
+    list-style-type: circle;
+}
+
+button{
+    background-color:khaki;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
+}
+
+figure{ 
+    width: 170px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#poze{
+    display: flex;
+    flex-flow: row wrap;
+    width:100%;
+    border:0.5px solid maroon;
+    background-color:rgb(255, 240, 215);
+    border-radius: 25px;
+    padding: 50px;
+    float: left;
+}
+
+.imgf{
+    width:100%; 
+    height:auto;  
+}
+
+.item {
+    flex: 1 1 auto;
+    margin:30px;
+}
+
+.contact1,.contact2{
+    width: 50%;
+    float:left;
+    font-size: large;
+    font-weight: 550;
+    font-style: italic;
+}
+
+.multumim{
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+footer{
+    color:maroon;
+    background-color:rgb(252, 205, 125);
+    text-align: center;
+    font-style: italic;
+    font-family:cursive;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .header{
+        padding: 10px 10px;
+        flex-direction: column;
+        
+    }
+    nav ul ul{
+        top:100px;
+    }
+}
+
+@media only screen and (max-width: 695px)
+{
+    .header{
+        padding: 10px 10px;
+        flex-direction: column;
+        position: initial;
+    }
+    .filozofia{
+        font-size: 15px;
+    }
+    .gol{
+       padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{ 
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 695px)
+{
+    .gol{
+        padding-bottom: 95px;
+    }
+    .gol2{
+        padding-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 300px)
+{
+    *{
+        font-size: smaller;
+    }
+    h1{
+        font-size: 10px;
+    }
+}

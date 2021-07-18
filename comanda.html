@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comandă Online | Restaurant DaVinci</title>
+        <link rel="stylesheet" type="text/css" href="comanda.css">
+        <link rel="stylesheet"  href="icon/css/all.min.css">
+        <link rel="shortcut icon" href="dv.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="comanda.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <header id="getcomputedstyle" onclick="current_target(event)">
+            <div class="logo">
+               <h1>Restaurant<span>DaVinci</span> -- Comandă Online</h1>
+            </div>
+            <div class="icon">
+                <p id="iconp">0</p>
+                <i class="fas fa-2x fa-shopping-cart"></i>
+            </div>
+            <p id="ceas"></p>
+        </header>
+        <form>
+            <div id="detalii" >
+               <div class="detalii2" onclick="functie1(event)">
+                    <h2>Detalii de contact</h2>
+               </div>
+               <label for="nume">Nume</label>
+               <input type="text" id="nume" placeholder="Introduceți nume"/>
+               <label for="prenume">Prenume</label>
+               <input type="text" id="prenume" placeholder="Introduceți prenume"/>
+               <label for="adresa">Adresă</label>
+               <input type="text" id="adresa" placeholder="Introduceți adresa"/>
+               <label for="email">E-mail</label>
+               <input type="text" id="email" placeholder="Introduceți email"/>
+               <label for="judet">Județ</label>
+                  <select id="judete">
+                      <option value="p1">Prahova</option>
+                      <option value="p2">Buzău</option>
+                      <option value="p3">Ilfov</option>
+                      <option value="p4">Brașov</option>
+                  </select>
+                <label for="oras">Oraș</label>
+                <input type="text" id="oras" placeholder="Introduceți oraș"/>
+                <label for="nr">Număr de telefon</label>
+                <input type="number" id="nr" placeholder="Introduceți numărul"/>
+                <br></br>
+                <button id="btn">Trimite detaliile</button>
+                
+                <!-- <button id="eroare" onclick="not()">Eroare 404</button> -->
+            </div>
+        </form> 
+        <br>
+        <div id="creat">
+
+        </div>
+        <br>
+        <div>
+          <button id="put" onclick="Update()">PUT</button>
+          <button id="delete" onclick="Sterge()">DELETE</button>
+        </div>
+        <br>
+        <form>
+            <div id="stopprop1" onclick="functie2()">
+                <h3>Pentru comenzile online, preparatele disponibile sunt doar cele de mai jos! Vă mulțumim pentru înțelegere!</h3>
+                <div id="stopprop2" onclick="functie1(event)">
+                    <h3>Completați cantitățile în dreptul preparatelor dorite:</h3>
+                </div>
+            </div>
+            <div id="produse">
+                <label><input type="checkbox" class="produs" value="9" name="ciorbă de legume" onchange="schimbastil()">Ciorbă de legume - 9 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+                             
+                <label><input type="checkbox" class="produs" value="10" name="ciorbă de perișoare" onchange="schimbastil()">Ciorbă de perișoare - 10 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+               
+                <label><input type="checkbox" class="produs" value="10" name ="ciorbă de vită" onchange="schimbastil()">Ciorbă de vită - 10 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+               
+                <label><input type="checkbox" class="produs" value="15" name="ciorbă de burtă" onchange="schimbastil()">Ciorbă de burtă - 15 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+                
+                <label><input type="checkbox" class="produs" value="20" name="aripioare picante" onchange="schimbastil()">Aripioare picante - 20 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+                
+                <label><input type="checkbox" class="produs" value="22" name="pui cu cartofi la cuptor" onchange="schimbastil()">Pui cu cartofi la cuptor - 22 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+                
+                <label><input type="checkbox" class="produs" value="23" name="varză călită" onchange="schimbastil()">Varză călită - 23 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+               
+                <label><input type="checkbox" class="produs" value="25" name="hamburger de vită" onchange="schimbastil()">Hamburger de vită - 25 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+               
+                <label><input type="checkbox" class="produs" value="25" name="paste cu ton" onchange="schimbastil()">Paste cu ton - 25 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+               
+                <label><input type="checkbox" class="produs" value="27" name="ceafă de porc" onchange="schimbastil()">Ceafă de porc - 27 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+              
+                <label><input type="checkbox" class="produs" value="30" name="pizza capriciosa" onchange="schimbastil()">Pizza Capriciosa - 30 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+              
+                <label><input type="checkbox" class="produs" value="30" name="pizza margherita" onchange="schimbastil()">Pizza Margherita - 30 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+              
+                <label><input type="checkbox" class="produs" value="33" name="păstrăv" onchange="schimbastil()">Păstrăv - 33 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+              
+                <label><input type="checkbox" class="produs" value="35" name="piept de rață" onchange="schimbastil()">Piept de rață - 35 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+              
+                <label><input type="checkbox" class="produs" value="35" name="calamari umpluți" onchange="schimbastil()">Calamari umpluți - 35 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+             
+                <label><input type="checkbox" class="produs" value="35" name="somon file" onchange="schimbastil()">Somon file - 35 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+             
+                <label><input type="checkbox" class="produs" value="12" name="tiramisu" onchange="schimbastil()">Tiramisu - 12 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+               
+                <label><input type="checkbox" class="produs" value="20" name="tort de mere" onchange="schimbastil()">Tort de mere - 20 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+            
+                <label><input type="checkbox" class="produs" value="22" name="tortul casei" onchange="schimbastil()">Tortul casei - 22 lei
+                <input type="text" class="cantitate" placeholder="cantitate" onchange="makecheck()"></label>
+                
+                <p><strong>Atenție!</strong> Prețul afișat cuprinde și costul transportului! Total plată: (lei)</p>
+                <p id="total"></p>
+                <br>
+                <button id="btn2">Finalizează comanda</button>
+           </div>
+        </form> 
+        <br>
+        <div id="buton_viz">
+           <button id="vizualizare">Vizualizează comenzile</button>
+        </div>
+        <div id="modalbox" class="modal">
+            <div class="continut-modal">
+               <p>Comenzile plasate:</p>
+               <p id="prod"></p>
+            </div>
+        </div>
+        <br>
+        <div id="buton_viz2">
+            <button id="vizualizare2">Vizualizează detaliile de contact</button>
+         </div>
+         <div id="modalbox2" class="modal"  style="overflow-y: scroll">
+             <div class="continut-modal">
+                <p>Detaliile de contact:</p>
+                <p id="detcontact"></p>
+             </div>
+         </div>  
+        <br></br>    
+        <footer>
+           <p>--------Restaurant DaVinci--------</p>
+           <p>Toate drepturile rezervate © 2021</p>
+        </footer>
+    </body>
+</html>
